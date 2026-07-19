@@ -1,4 +1,2 @@
 # bookingId|guestName|phone|email|roomNumber|roomType|checkIn|checkOut|numberOfGuests|nightlyRate|status|createdAt
-BK1001|chamarty sasank|8309152635|chamartysasank8d@gmail.com|201|DOUBLE|2026-08-23|2026-08-24|4|2500.00|COMPLETED|2026-07-18T13:31:53
-BK1002|HEMA|637378882|HEMA@GMAIL.COM|402|SUITE|2026-07-23|2026-07-25|2|6500.00|COMPLETED|2026-07-18T13:35:15
-BK1003|sahithi|9565215223|sahithi@gmail.com|202|DOUBLE|2026-08-23|2026-08-25|3|2500.00|COMPLETED|2026-07-19T11:25:11
+
