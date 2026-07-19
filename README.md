@@ -1,9 +1,9 @@
-# 🏨 Hotel Room Booking Console App
+# 🏨 Hotel Management System (Java Console Application)
 
 A polished, animated, menu-driven **Java console application** that simulates a real hotel's room booking system — search rooms, create bookings, check guests in/out, and generate professional bills, all from the terminal.
 
-> **Developer:** Sasank
-> **Tech Stack:** Core Java 17+, OOP, Collections, File Handling, java.time, BigDecimal
+> **Author:** Sasank
+> **Tech Stack**: Core Java, OOP, Collections Framework, File Handling, java.time API, BigDecimal
 > **Status:** ✅ Complete, tested, and ready to run
 
 ---
@@ -91,11 +91,25 @@ Hotel-Room-Booking-Console-App/
 ├── data/                 → bookings.txt (persisted booking records, auto-created)
 ├── outputs/              → auto-generated text receipts per booking
 ├── screenshots/          → place your submission screenshots here
-├── docs/                 → interview prep, testing strategy, GitHub & proof plan
+
 ├── README.md
-├── .gitignore
-└── pom.xml               → optional Maven descriptor (plain javac also works)
-```
+
+Hotel-Management-System-Java/
+
+│
+├── src/
+│   ├── main/
+│   ├── model/
+│   ├── repository/
+│   ├── service/
+│   └── utility/
+│
+├── data/
+├── outputs/
+├── screenshots/
+├── README.md
+├── run.bat
+└── run.sh
 
 ---
 
@@ -112,7 +126,7 @@ Hotel-Room-Booking-Console-App/
 - Room status auto-updates (Vacant ↔ Occupied)
 - File-based persistence across runs
 
-**Optional / Future scope** — see [Future Improvements](#8-limitations--future-improvements)
+
 
 ---
 
@@ -153,7 +167,11 @@ java -cp bin main.Main
  6. Check-out and print bill
  7. Cancel a booking
  8. Booking history
- 9. Exit
+ 9. reports
+10.find with phone number
+11.exit
+
+
 ```
 
 ### Sample Bill Output
@@ -167,15 +185,24 @@ java -cp bin main.Main
 ║ Room Number                                                      101 ║
 ║ Nights                                                              2 ║
 ╟──────────────────────────────────────────────────────────────────────╢
-║ Nightly Rate                                                ₹1500.00 ║
-║ Room Charge                                                 ₹3000.00 ║
-║ Tax (10%)                                                    ₹300.00 ║
+║ Nightly Rate                                                Rs1500.00 ║
+║ Room Charge                                                 Rs3000.00 ║
+║ Tax (10%)                                                    Rs300.00 ║
 ╟──────────────────────────────────────────────────────────────────────╢
-║ TOTAL AMOUNT                                                ₹3300.00 ║
+║ TOTAL AMOUNT                                                Rs3300.00 ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
+## Technologies Used
+
+- Java
+- Object-Oriented Programming (OOP)
+- Java Collections Framework
+- File Handling
+- BigDecimal
+- LocalDate & LocalDateTime
+- ANSI Console Formatting
 
 ## 8️⃣ Limitations & Future Improvements
 
@@ -193,25 +220,70 @@ java -cp bin main.Main
 - REST API + web front-end
 
 ---
+## Features Implemented
+
+✔ Room Management
+
+✔ Guest Registration
+
+✔ Booking Generation
+
+✔ Automatic Booking ID
+
+✔ Booking History
+
+✔ Room Availability Checking
+
+✔ Check-in
+
+✔ Check-out
+
+✔ Bill Generation
+
+✔ Receipt Generation
+
+✔ Booking Cancellation
+
+✔ Revenue Report
+
+✔ Local File Storage
+
+✔ Input Validation
+
+✔ Date Validation
+
+✔ Capacity Validation
 
 ## 9️⃣ Learning Outcomes
 
 Building this project reinforced: layered application design, defensive input validation, precise monetary calculations with `BigDecimal`, date-range overlap algorithms, file-based persistence, and building a genuinely pleasant console UX with ANSI colors and animation — skills directly transferable to backend and full-stack development roles.
 
 ---
+## 📷 Screenshots
 
-## 🔟 Author
+The repository includes screenshots demonstrating the application's workflow.
 
-**Sasank**
-B.Tech Student, Raghu Engineering College
-Built as a hands-on Java OOP project — proof of work for GitHub and placement preparation.
+- Startup Screen
+- Main Menu
+- Room Listing
+- Room Search
+- Booking Confirmation
+- View Booking
+- Check-in
+- Check-out
+- Booking History
+- Reports Dashboard
+- Generated Receipt
 
+## Author
+
+C. Sasank
+
+B.Tech (Computer Science & Engineering)
+
+Raghu Engineering College
+mentor:Umesh sir (IIP)
+
+This project was developed as part of Java learning to demonstrate Object-Oriented Programming, File Handling, and Console Application Development.
 ---
 
-## 📎 More Documentation
-
-See the [`docs/`](./docs) folder for:
-- [`INTERVIEW_QA.md`](./docs/INTERVIEW_QA.md) — 10 predicted interview questions & strong answers
-- [`TESTING.md`](./docs/TESTING.md) — manual test cases & expected results
-- [`GITHUB_GUIDE.md`](./docs/GITHUB_GUIDE.md) — repo naming, commit strategy, `.gitignore` tips
-- [`PROOF_PLAN.md`](./docs/PROOF_PLAN.md) — day-wise commit & screenshot plan
